@@ -74,7 +74,7 @@ services:
       - 9000:9000
       - 9001:9001
     volumes:
-      - ./data/minio:/bitnami/minio/data
+      - minio_data:/bitnami/minio/data
     networks:
       - my_network
 
@@ -84,3 +84,4 @@ networks:
 
 volumes:
   mysql_volume:
+  minio_data:
